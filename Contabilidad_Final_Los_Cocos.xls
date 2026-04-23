@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal"><Alignment ss:Vertical="Bottom"/><Font ss:FontName="Calibri" ss:Size="11"/></Style>
+  <Style ss:ID="Header"><Font ss:FontName="Calibri" ss:Size="12" ss:Color="#FFFFFF" ss:Bold="1"/><Interior ss:Color="#2F75B5" ss:Pattern="Solid"/><Alignment ss:Horizontal="Center" ss:Vertical="Center"/></Style>
+  <Style ss:ID="Title"><Font ss:FontName="Calibri" ss:Size="18" ss:Color="#1F4E78" ss:Bold="1"/><Alignment ss:Horizontal="Center"/></Style>
+  <Style ss:ID="Currency"><NumberFormat ss:Format="#,##0.00&quot; Bs.&quot;"/></Style>
+  <Style ss:ID="Total"><Font ss:Bold="1"/><Interior ss:Color="#DDEBF7" ss:Pattern="Solid"/><Borders><Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/></Borders></Style>
+  <Style ss:ID="SubSection"><Font ss:Bold="1" ss:Color="#FFFFFF"/><Interior ss:Color="#5B9BD5" ss:Pattern="Solid"/><Alignment ss:Horizontal="Center"/></Style>
+ </Styles>
+ <Worksheet ss:Name="Contabilidad">
+  <Table ss:ExpandedColumnCount="7">
+   <Column ss:Width="220"/><Column ss:Width="100" ss:Span="5"/>
+   <Row ss:Height="30"><Cell ss:MergeAcross="6" ss:StyleID="Title"><Data ss:Type="String">INVERSIONES LOS COCOS - INFORME CONTABLE FINAL</Data></Cell></Row>
+   <Row ss:Height="20">
+    <Cell ss:StyleID="Header"><Data ss:Type="String">CUENTA</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">DEBE</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">HABER</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">EGRESO</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">INGRESO</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">ACTIVO</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">PASIVO+CAP</Data></Cell>
+   </Row>   <Row>
+    <Cell><Data ss:Type="String">Banco de venezuela cta cte</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">282500</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">282500</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Banco Banesco cta en divisas</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">2340000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">2340000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Banco Banesco cta de ahorros</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1000000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1000000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Banco de venezuela cta en Divisas</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">119000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">119000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Efectivo</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">340000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">340000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cuentas por cobrar sr. Jorge García</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">75000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">75000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Maquinarias</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">200000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">200000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Edificios</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1500000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1500000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Aire Acondicionado</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">237000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">237000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Escritorios</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">125000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">125000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Computadoras Lenovo</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">900000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">900000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Camión Ford 350</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">8500000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">8500000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Moto Bera 125</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">350000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">350000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Inventario Inicial</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">850000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">850000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Compras</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1150000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1150000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sueldos y Salarios</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">150000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">150000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Gastos de Alquiler</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Honorarios Profesionales</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">110000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">110000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Aseo urbano</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">18000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">18000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Corpoelec</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">9000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">9000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Gastos de reparación Maquinaria</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">45000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">45000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Comisiones de ventas</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">20000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">20000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Gastos varios de ventas</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">12100</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">12100</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Devoluciones en ventas</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">11000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">11000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Artículos de escritorio</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">25000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">25000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cuenta ppor pagar Luisa Ramirez</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1000000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1000000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sueldos y Salarios por pagar</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">143000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">143000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Hipoteca por pagar</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">750000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">750000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Servicios Publicos por pagar</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">27000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">27000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Honorarios Profesionales por pagar</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">110000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">110000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cuentas por pagar Compuservicios</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">655000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">655000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cuentas por pagar González y Cia</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">4350000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">4350000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Capital</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">7700000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">7700000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ventas</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">3469700</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">3469700</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ingresos por Intereses Bancarios</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">85000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">85000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Venta de chatarra</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rebajas en compras</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">46900</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">46900</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Devoluciones en compras</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">32000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">32000</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Inventario Final (Ajuste)</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">-1527200</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="Currency"><Data ss:Type="Number">1527200</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row/><Row/>
+   <Row ss:StyleID="SubSection"><Cell ss:MergeAcross="1"><Data ss:Type="String">Cálculo de compras netas</Data></Cell><Cell/><Cell ss:MergeAcross="2" ss:StyleID="SubSection"><Data ss:Type="String">Ventas - Devoluciones = Ventas Netas</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">2037600</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Compras</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">1380000</Data></Cell><Cell/><Cell ss:MergeAcross="2"><Data ss:Type="String">Ventas netas - costo de ventas = Utilidad bruta</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">1119700</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Gastos de compras</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">12500</Data></Cell><Cell/><Cell ss:MergeAcross="2" ss:StyleID="Total"><Data ss:Type="String">Utilidad bruta =</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">1119700</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Gastos de nacionalización</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">40000</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Impuestos de aduana</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">15000</Data></Cell><Cell/><Cell ss:StyleID="SubSection"><Data ss:Type="String">Otros Ingresos:</Data></Cell><Cell ss:StyleID="SubSection"><Data ss:Type="String">Monto</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Rebajas en compras</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">-25000</Data></Cell><Cell/><Cell><Data ss:Type="String">Ingresos por Intereses Bancarios</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">35000</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Devoluciones en compras</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">-14600</Data></Cell><Cell/><Cell><Data ss:Type="String">Ingresos Varios</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">300000</Data></Cell></Row>
+   <Row ss:StyleID="Total"><Cell><Data ss:Type="String">Compras netas =</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">1407900</Data></Cell><Cell/><Cell ss:StyleID="Total"><Data ss:Type="String">Total otros ingresos</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">335000</Data></Cell></Row>
+   <Row ss:StyleID="SubSection"><Cell ss:MergeAcross="1"><Data ss:Type="String">Cálculo del costo de ventas</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Inventario inicial</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">1400000</Data></Cell><Cell/><Cell ss:StyleID="Total"><Data ss:Type="String">Total ingreso =</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">697300</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Compras netas</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">1407900</Data></Cell><Cell/><Cell ss:MergeAcross="2"><Data ss:Type="String">Utilidad neta = total ingreso + total otros ingresos</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Inventario final</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">-1890000</Data></Cell><Cell/><Cell ss:MergeAcross="2" ss:StyleID="Total"><Data ss:Type="String">Total utilidad neta (ganancia) =</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">1032300</Data></Cell></Row>
+   <Row ss:StyleID="Total"><Cell><Data ss:Type="String">Total costo de ventas =</Data></Cell><Cell ss:StyleID="Currency"><Data ss:Type="Number">917900</Data></Cell></Row>  </Table>
+ </Worksheet>
+</Workbook>

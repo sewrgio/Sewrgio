@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Servicio Comunitario - Sergio Malavé</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #f43f5e;
+            --transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .presentation-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            transform: translateY(20px);
+            z-index: 1;
+        }
+
+        .slide.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            z-index: 10;
+        }
+
+        .slide-content {
+            max-width: 1000px;
+            width: 100%;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.1; }
+        h2 { font-size: 2.5rem; font-weight: 700; }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            color: var(--text);
+        }
+
+        li::before {
+            content: '→';
+            color: var(--primary);
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 250px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+            z-index: 100;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.39);
+        }
+
+        button:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        button:disabled {
+            background: #334155;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+            z-index: 1000;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: rgba(99, 102, 241, 0.2);
+            border: 1px solid var(--primary);
+            border-radius: 100px;
+            color: var(--primary-light);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        /* Background animation */
+        .bg-blobs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: move 20s infinite alternate;
+        }
+
+        .blob-1 { top: -10%; left: -10%; }
+        .blob-2 { bottom: -10%; right: -10%; animation-delay: -5s; }
+
+        @keyframes move {
+            from { transform: translate(0, 0); }
+            to { transform: translate(100px, 100px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="presentation-container">
+        <!-- Slide 1: Title -->
+        <section class="slide active">
+            <div class="slide-content" style="text-align: center;">
+                <div class="badge">Informe Final de Servicio Comunitario</div>
+                <h1>Formación Tecnológica e Inclusión Digital</h1>
+                <p>Desarrollo de Competencias Digitales en la Comunidad de Propatria</p>
+                <div style="margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+                    <p style="font-weight: 600; color: var(--text);">Sergio Malavé</p>
+                    <p style="font-size: 0.9rem;">Abril 2026 | IUJO - SUPERATEC</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Introducción -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2>Introducción y Alianza</h2>
+                <p>Este proyecto se fundamenta en la sistematización de la experiencia vivida en alianza con <strong>SUPERATEC</strong>, respondiendo a la necesidad de reducir la brecha digital.</p>
+                <ul>
+                    <li>Alianza estratégica IUJO - SUPERATEC.</li>
+                    <li>Enfoque en la Responsabilidad Social Universitaria.</li>
+                    <li>Sede: Centro Comunal Catia Cecca, Propatria.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 3: Problemática -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2>Problemática Identificada</h2>
+                <p>En Propatria se detectó una desconexión entre el acceso básico a la tecnología y el desarrollo de competencias avanzadas.</p>
+                <ul>
+                    <li>Baja percepción de autoeficacia tecnológica.</li>
+                    <li>Barreras psicológicas y estereotipos de género/edad.</li>
+                    <li>Carencia de oferta formativa especializada y accesible.</li>
+                    <li>Desconexión con las demandas del mercado laboral digital.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 4: Objetivos -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2>Objetivos del Proyecto</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <div class="badge">General</div>
+                        <p>Impartir un ciclo de formación tecnológica integral a 15 miembros de la comunidad para mejorar su empleabilidad.</p>
+                    </div>
+                    <div>
+                        <div class="badge">Específicos</div>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Diseñar cursos de Programación Web.</li>
+                            <li>Desarrollar material didáctico adaptado.</li>
+                            <li>Guiar la creación de proyectos finales.</li>
+                            <li>Realizar charlas comunitarias abiertas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Metodología -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2>Estrategia Metodológica</h2>
+                <p>Se adoptó una metodología <strong>híbrida teórico-práctica</strong> basada en el aprendizaje por proyectos.</p>
+                <div class="image-grid">
+                    <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 16px;">
+                        <h3 style="color: var(--primary-light); margin-bottom: 0.5rem;">Fase Técnica</h3>
+                        <p style="font-size: 0.9rem;">Sesiones de 4 horas: Teoría (1h), Práctica Guiada (2h) y Consultas (1h).</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 16px;">
+                        <h3 style="color: var(--primary-light); margin-bottom: 0.5rem;">Cierre</h3>
+                        <p style="font-size: 0.9rem;">Presentación de proyectos finales y entrega de certificados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Temario -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2>Contenido Formativo</h2>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;">
+                    <div style="text-align: center; background: rgba(99, 102, 241, 0.1); padding: 2rem; border-radius: 16px;">
+                        <h3 style="font-size: 1.5rem;">HTML5</h3>
+                        <p style="font-size: 0.8rem; margin-top: 1rem;">Estructura y Semántica</p>
+                    </div>
+                    <div style="text-align: center; background: rgba(99, 102, 241, 0.1); padding: 2rem; border-radius: 16px;">
+                        <h3 style="font-size: 1.5rem;">CSS3</h3>
+                        <p style="font-size: 0.8rem; margin-top: 1rem;">Diseño Responsivo</p>
+                    </div>
+                    <div style="text-align: center; background: rgba(99, 102, 241, 0.1); padding: 2rem; border-radius: 16px;">
+                        <h3 style="font-size: 1.5rem;">JS</h3>
+                        <p style="font-size: 0.8rem; margin-top: 1rem;">Lógica y Funciones</p>
+                    </div>
+                </div>
+                <p style="margin-top: 2rem; text-align: center;">Charlas adicionales: Mantenimiento de PCs y Oportunidades Laborales.</p>
+            </div>
+        </section>
+
+        <!-- Slide 7: Resultados -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2>Resultados e Impacto</h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                    <div class="image-grid">
+                        <div class="image-container">
+                            <img src="../WhatsApp Image 2026-04-12 at 9.55.20 AM (1).jpeg" alt="Sesión de clase">
+                        </div>
+                        <div class="image-container">
+                            <img src="../WhatsApp Image 2026-04-17 at 11.22.18 AM.jpeg" alt="Práctica guiada">
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><strong>15 Proyectos</strong> finales exitosos.</li>
+                            <li><strong>92% Asistencia</strong> promedio.</li>
+                            <li><strong>85% Aprobación</strong> en evaluación final.</li>
+                            <li><strong>95% Satisfacción</strong> (Calificación Excelente).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Conclusiones -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2>Conclusiones y Futuro</h2>
+                <p>El proyecto demostró que la tecnología es una herramienta poderosa de inclusión social cuando se enseña con empatía y pertinencia.</p>
+                <div class="badge">Recomendaciones</div>
+                <ul style="font-size: 0.9rem;">
+                    <li>Establecer programa permanente de SC en tecnología.</li>
+                    <li>Dotar a estudiantes con kits de material didáctico.</li>
+                    <li>Diversificar lenguajes: Python y Desarrollo Móvil.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 9: Gracias -->
+        <section class="slide">
+            <div class="slide-content" style="text-align: center;">
+                <h1>¡Gracias!</h1>
+                <p>¿Tienen alguna pregunta?</p>
+                <div class="badge">Sergio Malavé | IUJO 2026</div>
+                <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 2rem;">
+                    <div class="image-container" style="width: 300px; height: 200px;">
+                        <img src="../WhatsApp Image 2026-04-17 at 11.22.22 AM.jpeg" alt="Equipo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">Sergio Malavé - IUJO Servicio Comunitario</div>
+
+    <div class="controls">
+        <button id="prevBtn" onclick="changeSlide(-1)" disabled>Anterior</button>
+        <button id="nextBtn" onclick="changeSlide(1)">Siguiente</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const progressBar = document.getElementById('progressBar');
+
+        function updateProgress() {
+            const progress = ((currentSlide + 1) / slides.length) * 100;
+            progressBar.style.width = progress + '%';
+        }
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide += direction;
+            
+            if (currentSlide < 0) currentSlide = 0;
+            if (currentSlide >= slides.length) currentSlide = slides.length - 1;
+            
+            slides[currentSlide].classList.add('active');
+            
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+            
+            updateProgress();
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') changeSlide(1);
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+        });
+
+        updateProgress();
+    </script>
+</body>
+</html>

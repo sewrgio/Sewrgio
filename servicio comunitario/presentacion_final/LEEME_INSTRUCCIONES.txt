@@ -1,0 +1,13 @@
+INSTRUCCIONES PARA TU PRESENTACIÓN
+
+1. VERSIÓN WEB (Recomendada para impresionar):
+   Abre el archivo 'index.html' en tu navegador. Puedes usar las flechas del teclado para pasar las láminas.
+
+2. VERSIÓN POWERPOINT (Manual):
+   - Abre PowerPoint.
+   - Ve a 'Inicio' -> 'Nueva diapositiva' -> 'Diapositivas del esquema...'.
+   - Selecciona el archivo 'esquema_pptx.txt'.
+   - PowerPoint creará las láminas con el texto. Luego solo debes aplicar un diseño y pegar las fotos que están en esta misma carpeta.
+
+3. FOTOS:
+   Las fotos ya están referenciadas en la versión web. Si las necesitas para el PowerPoint, están en la carpeta principal de 'servicio comunitario'.

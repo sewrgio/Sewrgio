@@ -1,0 +1,46 @@
+# ESQUEMA PARA POWERPOINT - SERVICIO COMUNITARIO
+# Sergio Malavé - IUJO 2026
+
+DIAPOSITIVA 1: Portada
+Título: Formación Tecnológica e Inclusión Digital
+Subtítulo: Desarrollo de Competencias Digitales en la Comunidad de Propatria
+Créditos: Sergio Malavé | IUJO - SUPERATEC
+
+DIAPOSITIVA 2: Introducción y Alianza
+- Sistematización de la experiencia vivida en alianza con SUPERATEC.
+- Enfoque en la Responsabilidad Social Universitaria.
+- Sede: Centro Comunal Catia Cecca, Propatria.
+
+DIAPOSITIVA 3: Problemática Identificada
+- Desconexión entre acceso básico y competencias avanzadas.
+- Baja percepción de autoeficacia tecnológica.
+- Barreras psicológicas y estereotipos de género/edad.
+- Carencia de oferta formativa alineada al mercado laboral.
+
+DIAPOSITIVA 4: Objetivos del Proyecto
+General: Impartir ciclo de formación integral a 15 miembros de la comunidad.
+Específicos: 
+- Diseñar cursos de Programación Web (HTML, CSS, JS).
+- Desarrollar material didáctico adaptado.
+- Guiar la creación de proyectos finales.
+
+DIAPOSITIVA 5: Estrategia Metodológica
+- Metodología híbrida teórico-práctica.
+- Aprendizaje por proyectos y formación situada.
+- Estructura: 1h Teoría, 2h Práctica, 1h Consultas.
+
+DIAPOSITIVA 6: Resultados e Impacto
+- 15 Proyectos finales exitosos.
+- 92% Asistencia promedio.
+- 85% Aprobación con calificación > 15/20.
+- 95% Satisfacción de los participantes.
+
+DIAPOSITIVA 7: Conclusiones
+- La tecnología como herramienta de inclusión social.
+- Fortalecimiento del perfil académico en Informática.
+- Alianzas institucionales consolidadas.
+
+DIAPOSITIVA 8: Recomendaciones
+- Establecer programa permanente de SC en tecnología.
+- Dotar a estudiantes con kits de material didáctico.
+- Diversificar lenguajes: Python y Desarrollo Móvil.
